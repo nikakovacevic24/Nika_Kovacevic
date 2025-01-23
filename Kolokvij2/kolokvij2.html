@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolokvij2</title>
+    <style>
+       /*  zastava Nizozemske */
+        div{
+            width: 450px;
+            height: 90px;
+        }
+        .crvena{
+          background-color: rgb(158, 0, 0);
+        }
+        .bijela {
+            background-color: white;
+        }
+        .plava{
+            background-color: rgb(4, 4, 156);
+        }
+/* Box model */
+        .violet{
+            width: 250px;
+            height: 150px;
+            margin: 20px;
+            padding: 30px;
+            border: 15px solid;
+            box-shadow: 10px 10px 5px 12px purple;
+            background-color: violet;
+
+        }
+
+    /* KLASA i ID */
+    .input-field{
+        border: 5px solid  violet;
+        padding: 5px;
+        margin: 10px 0;
+    }
+
+    #special-input{
+        border: 10px solid orange;
+        padding: 10px;
+        margin: 15px 0;
+    }
+
+   /* CSS grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    width: 300px;
+    margin: 20px auto;
+}
+.grid div{
+    text-align: center;
+    padding: 20px;
+    border: 5px solid black; 
+
+}
+.zuta{
+    background-color: yellow;
+}
+.one{
+    background-color: brown;
+}
+.two{
+    background-color: green;
+
+}
+.three{
+    background-color: violet;
+}
+
+.four{
+    background-color: yellowgreen;
+}
+.five{
+    background-color: aquamarine;
+}
+
+.six{
+    background-color: blueviolet;
+}
+.seven{
+    background-color: pink;
+}
+.eight{
+    background-color: chartreuse;
+}
+    </style>
+</head>
+<body>
+    <h2>Zastava Nizozemske</h2>
+    <div class="crvena"></div>
+    <div class="bijela"></div>
+    <div class="plava"></div>
+<br>
+    <h2>Box model</h2>
+    <div class="violet"></div>
+<br>
+    <h2>Upotreba Klase i ID</h2>
+    <input type="text" class="input-field" placeholder="Unesite svoje ime">
+    <input type="text" id="special-input" placeholder="Unesite svoje prezime">
+    
+    <h2>CSS grid</h2>
+    <div class="grid">
+    <div class="zuta">Mobitel</div>
+    <div class="one">Laptop</div>
+    <div class="two">Kompjuter</div>
+    <div class="three">Tablet</div>
+    <div class="four">Pametni sat</div>
+    <div class="five">Televizor</div>
+    <div class="six">Radio</div>
+    <div class="seven">Slušalice</div>
+    <div class="eight">Zvučnici</div>
+    </div>
+
+    <h2>Javascript</h2>
+    <script src="kolokvij2.js"></script>
+</body>
+</html>
