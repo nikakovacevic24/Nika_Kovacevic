@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zadaca 5</title>
+    <style>
+         body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         header{
+            background-color: cadetblue;
+            color: antiquewhite;
+            text-align: center;
+            padding: 20px 10px;
+         }
+
+         h1{
+            margin: 0;
+         }
+
+         main  {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 10px;
+         }
+
+         section{
+            padding: 15px;
+            grid-column: span 4;
+            background-color: aqua;
+            border: 2px solid #251e1e;
+            text-align: center;
+            border-radius: 9px;
+
+         }
+
+         .recept img {
+            max-width: 100%;
+            border-radius: 9px;
+            box-shadow: 0 4px 6px rgba(0, 0,0,1);
+            border: 3 px solid #251e1e;
+
+         }
+
+         footer{
+            background-color: aquamarine;
+            color: rgb(4, 4, 4);
+            text-align: center;
+            padding: 10px 0;
+         }
+         #kontakt{
+            background-color: aqua;
+            border: 1px solid #251e1e;
+            border-radius: 9px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 600px;        
+        }
+
+        @media (max-width:480px) {
+            main{
+                grid-template-columns: 1fr;
+            }
+            section{
+                grid-column: 12;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dobro došli u svijet recepata</h1>
+        <p>Otkrijte najukusnije recepte koje morate probati.</p>
+    </header>
+    <main>
+        <section id="predjela">
+            <h2>Predjela</h2>
+            <div class="recept">
+                <img src="https://recepti-api.index.hr/img/preview/large/recipe/21bbccf2-ff40-4713-aeb5-50d44de95581/shutterstock_1918249598.jpg" alt="predjelo">
+                <h3>Popečci od tikvica</h3>
+                <p>Ovi zdravi popečci su jednostavni za pripremu , <br>ukusni i gotovi za 20 min</p>
+                  <h3>SASTOJCI</h3>
+                  <li>
+                    350 g naribanih tikvica
+                  </li>
+                  <li>
+                    1/4 žličice soli
+                  </li>
+                  <li>
+                    60g zobenog brašna
+                  </li>
+                  <li>
+                    1 jaje
+                  </li>
+                  <li>
+                    1/2 žličice luka u prahu
+                  </li>
+                  <li>
+                    100g naribanog sira
+                  </li>
+                  <li>
+                    Svježe mljeveni papar
+                  </li>
+                  <li>
+                    1 žlica sitno nasjeckanog mladog luka
+                  </li>
+                  <li>
+                    1 žlica maslinnovog ulja
+                  </li>
+                <h3>PRIPREMA</h3>
+                <p>Naribane tikvice stavite u cjedilo i posolite ih. Ostavite da odstoji oko 10 min. Rukama ili gazom istisnite što više vode iz tikvica.
+                    Pomiješajte sve sastojke, osim maslinovog ulja, u zdjeli srednje veličine.Rukama oblikujte smjesu od tikvica u 8 popečaka. 
+                    Zagrijte maslinovo ulje u tavi na srednje jakoj vatri. Rasporedite popečke i pecite oko 2-3 minute sa svake strane ili dok 
+                    malo ne porumene i postanu hrskavi. Poslužite toplo uz umak po želji.</p>
+            </div>
+        </section>
+
+        <section id="glavna-jela">
+            <h2>Glavna jela</h2>
+            <div class="recept">
+                <img src="https://static2skuhaj.story.hr/api/v3/images/592/1184/4526?ts=2025-01-22T13:31:54" alt="glavno jelo">
+                <h3>Varivo s kupusom i mljevenim mesom</h3>
+                <p>Zasitno i bogato jelo na žlicu</p>
+                <li>
+                    450 g mljevenog mesa
+                </li>
+                <li>
+                    1 glavica kupusa
+                </li>
+                <li>
+                    1/2 soka od rajčice
+                </li>
+                <li>
+                    280 g krumpira
+                </li>
+                <li>
+                    250 g mrkve
+                </li>
+                <li>
+                    75 g celera
+                </li>
+                <li>
+                    1 glavica luka
+                </li>
+                <li>
+                    sol i papar
+                </li>
+
+                <h3>PRIPREMA</h3>
+                <p>Mljeveno meso i sitno nasjeckani luk propirjajte u loncu na malo masti ili vode po želji.
+                     Kad meso porumeni dodajte krumpir, mrkvu i celer narezan na manje komade. 
+                     Kupus narežite na trakice i dodajte u lonac s ostalim sastojcima.
+                    Sve zajedno podliti vrućom vodom (oko 1/2 l) i sokom od rajčice. Posolite i popaprite. 
+                    Varivo kuhajte na laganoj temperaturi oko sat vremena, odnosno dok povrće i kurmpir ne omekšaju, a zatim jelo poslužite toplo.</p>
+            </div>
+
+
+        </section>
+
+        <section id="deserti">
+            <h2>Deserti</h2>
+            <div class="recept">
+                <img src="https://recepti-api.index.hr/img/preview/large/recipe/09173635-fcca-41b2-9ff8-93e8311d7211/IMG_1345%20(1).jpg" alt="desert">
+                <h3>Šnenokle</h3>
+                <p> Hrvatski desert austrijskog podrijetla koje su često pripremale bake.</p>
+
+                <li>
+                    1 l mlijeka
+                </li>
+                <li>
+                    5 bjelanjaka
+                </li>
+                <li> 5 žumanjaka
+
+                </li>
+                <li>
+                    100 g šećera
+                </li>
+                <li>
+                    1 žlica brašna
+                </li>
+                <li>
+                    1 paketić vanilin šećer
+                </li>
+
+                <p>Odvojite bjelanjke od žumanjaka te bjelanjke pomoću miksera istucite u čvrsti snijeg. Kako bi vam snijeg ispao još bolji, slobodno bjelanjcima, prije miksanja, dodajte i mrvicu soli. 
+                  U mlijeko stavite šećer i vaniliju (ili vanilin šećer) te ga zakuhajte. U kipuće mlijeko, pomoću žlice, ukuhavajte snijeg od bjelanjaka. Kako vam žličnjaci ne bi ispali šuplji, možete ih oblikovati i pomoću dvije žlice. Svaki je žličnjak potrebno kuhati po, otprilike, minutu sa svake strane. 
+                  Vadite ih pomoću šuplje grabilice (s rupicama) i stavljajte u zdjelice ili u jednu veću posudu. 
+                 Pjenjačom istucite žumanjke i brašno. U dobivenu smjesu pomalo dolijevajte i miješajte pjenjačom vruće mlijeko koje vam je ostalo od ukuhavanja žličnjaka. Dobiveno vratite na vatru i tucite pjenjačom dok ne zavrije te nastavite skroz dok se smjesa ne zgusne. 
+                 Dobivenu kremu prelijte preko žličnjaka i ostavite da se ohladi.
+                    
+                    </p>
+            </div>
+
+        </section>
+    </main>
+    <section id="kontakt">
+        <h2>Želite li još recepata</h2>
+        <p>Pošaljite nam vašu email adresu, ime i prezime, a mi ćemo vam poslati ukusnih recepata!</p>
+        <form action method="post">
+            <label for="ime">Ime:</label>
+            <br>
+            <input type="text" id="ime" name="ime" required placeholder="Vaše ime">
+            <br>
+            <br>
+            <label for="prezime">Prezime:</label>
+            <br>
+            <input type="text" id="prezime"  name="prezime" required placeholder="Vaše prezime">
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required placeholder="vaš@gmail.com">
+            <button type="submit">Pošalji</button>
+            <br>
+            <br>
+        </form>
+    </section>
+<footer>
+    <p>Pratite nas na društvenim mrežama:</p>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+</footer>
+</body>
+</html>
